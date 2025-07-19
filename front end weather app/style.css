@@ -1,0 +1,188 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+
+}
+
+#top {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px 20px 0 0;
+  background-color: skyblue;
+  font-family: Arial, sans-serif;
+  background: 
+    linear-gradient(skyblue, skyblue),
+    url('images/bg2.png')repeat center;
+  background-size: cover;
+  background-blend-mode: overlay;
+  backdrop-filter: blur(4px);
+}
+#weatherInfo{
+  margin-top: 60px;
+  background-color: black;
+  max-width: fit-content;
+  border-radius: 20px;
+  padding : 10px;
+  display: flex;
+}
+
+
+#container.initial {
+  display: none;
+  margin: auto;
+  color: white;
+  background-color: black;
+  padding: 30px;
+  padding-bottom: 87vh;
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background: 
+    linear-gradient(rgba(0, 0, 0,1 ), rgba(0, 0, 0,1)),
+    url('images/bg.png') center center;
+  background-size: cover;
+  background-blend-mode: overlay;
+  backdrop-filter: blur(4px);
+}
+#container {
+  display: none;
+  margin: auto;
+  color: white;
+  background-color: black;
+  padding: 30px;
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background: 
+    linear-gradient(rgba(0, 0, 0,1 ), rgba(0, 0, 0,1)),
+    url('images/bg.png') center center;
+  background-size: cover;
+  background-blend-mode: overlay;
+  backdrop-filter: blur(4px);
+}
+
+
+#entryPage {
+  padding: 50px;
+  border-radius: 25px;
+  color: aliceblue;
+  background-color: orange;
+}
+
+input[type="text"] {
+  width: 300px;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+canvas {
+  margin-top: 20px;
+  max-width: 100%;
+}
+
+#weatherInfo {
+  margin-top: 15px;
+  font-size: 18px;
+}
+
+#getWeatherBtn {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#getWeatherBtn:hover {
+  background-color: #0056b3;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #fff;
+}
+
+#tempChart {
+  max-width: 700px;
+  max-height: 300px;
+  width: 100%;
+  height: auto;
+  margin: 20px auto;
+  display: block;
+}
+
+#precipChart {
+  max-width: 500px;
+  max-height: 250px;
+  width: 100%;
+  height: auto;
+  margin: 20px auto;
+  display: block;
+}
+
+#windChart {
+  max-width: 600px;
+  max-height: 280px;
+  width: 100%;
+  height: auto;
+  margin: 20px auto;
+  display: block;
+}
+
+#charts {
+  display: flex;
+  flex-direction: column;
+  gap: px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.top-row,
+.bottom-row {
+  display: flex;
+  gap: 20px;
+}
+
+.bottom-row {
+  display: flex;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.chart-container {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  border-radius: 12px;
+}
+
+.temp-chart {
+  flex: 3;
+}
+
+.aqi-chart {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.half {
+  flex: 1;
+}

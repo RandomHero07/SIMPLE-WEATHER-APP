@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div id="top">
+        <div id="entryPage"><a href="#" id="showContainer">Want weather?</a></div>
+    </div>
+    <div id="container" class="container initial">
+
+        <input type="text" id="cityInput" placeholder="Enter city name" />
+        <button id="getWeatherBtn">How's The weather outside</button>
+
+        <div id="charts" style="display: none;">
+            <div class="top-row">
+                <div class="chart-container temp-chart">
+                    <canvas id="tempChart"></canvas>
+                </div>
+                <div class="chart-container aqi-chart">
+                    <canvas id="aqiGauge"></canvas>
+                </div>
+            </div>
+            <div class="bottom-row">
+                <div class="chart-container half">
+                    <canvas id="precipChart"></canvas>
+                </div>
+                <div class="chart-container half">
+                    <canvas id="windChart"></canvas>
+                </div>
+            </div>
+        </div>
+        <div id="weatherInfo"></div>
+
+
+    </div>
+    
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
