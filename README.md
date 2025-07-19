@@ -1,2 +1,1 @@
-###weather app with
-`open source api`s
+__weather app with `open source api`s__
